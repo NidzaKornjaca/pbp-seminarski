@@ -1,0 +1,9 @@
+INSERT INTO `Prijava` (`Tragac_Korisnik_idKorisnik`,`Oglas_idOglas`) VALUES (1,10),(2,90),(3,20),(4,62),(5,81),(6,1),(7,44),(8,57),(9,28),(10,5);
+INSERT INTO `Prijava` (`Tragac_Korisnik_idKorisnik`,`Oglas_idOglas`) VALUES (11,47),(12,40),(13,14),(14,53),(15,43),(16,3),(17,28),(18,31),(19,26),(20,60);
+INSERT INTO `Prijava` (`Tragac_Korisnik_idKorisnik`,`Oglas_idOglas`) VALUES (31,52),(32,39),(33,46),(34,1),(35,92),(36,82),(37,58),(38,80),(39,71),(40,34);
+INSERT INTO `Prijava` (`Tragac_Korisnik_idKorisnik`,`Oglas_idOglas`) VALUES (41,65),(42,1),(43,96),(44,10),(45,76),(46,8),(47,45),(48,81),(49,91),(50,76);
+INSERT INTO `Prijava` (`Tragac_Korisnik_idKorisnik`,`Oglas_idOglas`) VALUES (51,79),(52,69),(53,62),(54,39),(55,11),(56,52),(57,8),(58,7),(59,32),(60,53);
+INSERT INTO `Prijava` (`Tragac_Korisnik_idKorisnik`,`Oglas_idOglas`) VALUES (61,8),(62,73),(63,6),(64,36),(65,51),(66,34),(67,87),(68,92),(69,87),(70,80);
+INSERT INTO `Prijava` (`Tragac_Korisnik_idKorisnik`,`Oglas_idOglas`) VALUES (71,21),(72,8),(73,77),(74,33),(75,55),(76,28),(77,3),(78,68),(79,68),(80,40);
+INSERT INTO `Prijava` (`Tragac_Korisnik_idKorisnik`,`Oglas_idOglas`) VALUES (81,66),(82,23),(83,54),(84,93),(85,14),(86,12),(87,43),(88,41),(89,79),(90,28);
+INSERT INTO `Prijava` (`Tragac_Korisnik_idKorisnik`,`Oglas_idOglas`) VALUES (91,23),(92,99),(93,73),(94,63),(95,16),(96,65),(97,98),(98,79),(99,37),(100,15);

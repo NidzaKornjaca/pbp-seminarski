@@ -1,0 +1,1 @@
+INSERT INTO `Korisnik` (`korisnickoIme`,`lozinka`,`email`) VALUES ("KorIme","KCQ29WGY1JN","imejl@gmail.com");

@@ -1,0 +1,10 @@
+INSERT INTO `Prati` (`Tragac_Korisnik_idKorisnik`,`Poslodavac_Korisnik_idKorisnik`) VALUES (1,7),(2,36),(3,48),(4,70),(5,77),(6,29),(7,51),(8,1),(9,30),(10,4);
+INSERT INTO `Prati` (`Tragac_Korisnik_idKorisnik`,`Poslodavac_Korisnik_idKorisnik`) VALUES (11,32),(12,56),(13,67),(14,87),(15,30),(16,24),(17,71),(18,36),(19,40),(20,17);
+INSERT INTO `Prati` (`Tragac_Korisnik_idKorisnik`,`Poslodavac_Korisnik_idKorisnik`) VALUES (21,45),(22,88),(23,52),(24,49),(25,33),(26,56),(27,94),(28,53),(29,91),(30,64);
+INSERT INTO `Prati` (`Tragac_Korisnik_idKorisnik`,`Poslodavac_Korisnik_idKorisnik`) VALUES (31,55),(32,66),(33,3),(34,80),(35,51),(36,24),(37,92),(38,47),(39,15),(40,46);
+INSERT INTO `Prati` (`Tragac_Korisnik_idKorisnik`,`Poslodavac_Korisnik_idKorisnik`) VALUES (41,97),(42,44),(43,6),(44,94),(45,93),(46,97),(47,80),(48,4),(49,99),(50,90);
+INSERT INTO `Prati` (`Tragac_Korisnik_idKorisnik`,`Poslodavac_Korisnik_idKorisnik`) VALUES (51,25),(52,18),(53,29),(54,47),(55,77),(56,27),(57,100),(58,56),(59,61),(60,14);
+INSERT INTO `Prati` (`Tragac_Korisnik_idKorisnik`,`Poslodavac_Korisnik_idKorisnik`) VALUES (61,98),(62,61),(63,75),(64,67),(65,86),(66,87),(67,52),(68,38),(69,49),(70,63);
+INSERT INTO `Prati` (`Tragac_Korisnik_idKorisnik`,`Poslodavac_Korisnik_idKorisnik`) VALUES (71,94),(72,37),(73,31),(74,37),(75,74),(76,10),(77,100),(78,80),(79,34),(80,12);
+INSERT INTO `Prati` (`Tragac_Korisnik_idKorisnik`,`Poslodavac_Korisnik_idKorisnik`) VALUES (81,99),(82,89),(83,66),(84,64),(85,12),(86,23),(87,64),(88,74),(89,60),(90,95);
+INSERT INTO `Prati` (`Tragac_Korisnik_idKorisnik`,`Poslodavac_Korisnik_idKorisnik`) VALUES (91,59),(92,13),(93,59),(94,23),(95,33),(96,19),(97,90),(98,49),(99,96),(100,89);

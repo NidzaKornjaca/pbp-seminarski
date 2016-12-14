@@ -1,0 +1,1 @@
+INSERT INTO `Oglas` (`pozicija`,`opisPozicije`,`datumPostavljanja`,`datumIsteka`,`Grad_idGrada`,`Poslodavac_Korisnik_idKorisnik`) VALUES ("Public Relations","Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sed","2016-03-03 22:38:03","2017-11-16 00:39:46",3,38);

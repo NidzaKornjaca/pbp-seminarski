@@ -1,0 +1,1 @@
+INSERT INTO `Prijava` (`Tragac_Korisnik_idKorisnik`,`Oglas_idOglas`) VALUES (1,13);
