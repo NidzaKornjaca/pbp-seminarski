@@ -5,9 +5,9 @@ LDFLAGS =
 LDLIBS  = $(shell mysql_config --libs)
 IDIR = src
 ODIR = obj
-_DEPS = 
+_DEPS = queries.h
 DEPS = $(patsubst %,$(IDIR)/include/%,$(_DEPS))
-_OBJ = main.o
+_OBJ = queries.o main.o 
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 
 $(PROGRAM): $(OBJ)
