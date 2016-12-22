@@ -16,7 +16,15 @@ $(PROGRAM): $(OBJ)
 $(ODIR)/%.o: $(IDIR)/%.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS) $(LDLIBS)
 
-.PHONY: beauty clean dist
+.PHONY: all create insert beauty clean dist 
+
+all: create insert $(PROGRAM)
+
+create:
+	mysql -u root -proot -D mysql <db_creation_poslovni_oglasi.sql
+
+insert:
+	mysql -u root -proot -D mysql <datainserts/insert_all_data.sql
 
 beauty:
 	-indent -kr -nut main.c
