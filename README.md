@@ -1,6 +1,6 @@
 # Oglasi za posao
 
-_Autor: Nikola Vlahović 409/2015_
+_Autor: Nikola Vlahović_
 
 __Oglas__ se odlikuje _identifikatorom, autorom, datumom postavljanja, tagovima,
 pozicijom, opisom pozicije, __gradom__ zaposlenja,
