@@ -4,6 +4,7 @@
 #include <mysql.h>
 #include <stdarg.h>
 #include <errno.h>
+#include <ctype.h>
 #include "queries.h"
 
 #define QUERY_SIZE 256
@@ -21,8 +22,8 @@ int main (int argc, char **argv){
 	MYSQL *connection;
 	MYSQL_RES *result;
 	char query[QUERY_SIZE];	
-	char buffer[BUFFER_SIZE];
 	connection = mysql_init (NULL);
+	my_ulonglong affected;
 
 	char command = ' ';
 	unsigned id1, id2;
@@ -45,7 +46,6 @@ int main (int argc, char **argv){
 		else if(command == 'p'){
 			printf("Insert user id:");
 			scanf("%u", &id1);
-			printf("\n");
 			queriesSelectPrijavaForUser(query, id1);
 			result = run_query(query, connection);
 			print_result(result);
@@ -54,41 +54,37 @@ int main (int argc, char **argv){
 		else if(command == 'd'){
 			printf("Insert user id: ");
 			scanf("%u", &id1);
-			printf("\n");
 			printf("Insert job ad id: ");
 			scanf("%u", &id2);
-			printf("\n");
 			queriesDeletePrijava(query, id1, id2);
-			result = run_query(query, connection);
-			print_result(result);
-			mysql_free_result(result);
+			run_query(query, connection);
+			affected = mysql_affected_rows(connection);
+			printf("Affected %llu\n", affected);
 		}
 		else if(command == 'a'){
 			printf("Insert user id: ");
 			scanf("%u", &id1);
-			printf("\n");
 			printf("Insert job ad id: ");
 			scanf("%u", &id2);
-			printf("\n");
 			queriesInsertPrijava(query, id1, id2);
-			result = run_query(query, connection);
-			print_result(result);
-			mysql_free_result(result);	
+			run_query(query, connection);
+			affected = mysql_affected_rows(connection);
+			printf("Affected %llu\n", affected);
 		}
 		else if(command == 'i'){
 			print_instructions();
 		}
 		else if(command == 'u'){
 			queriesInsertKorisnik(query, "Korisnik", "Lozinka", "mejl@mejl.com");
-			result = run_query(query, connection);
-			print_result(result);
-			mysql_free_result(result);		
+			run_query(query, connection);
+			affected = mysql_affected_rows(connection);
+			printf("Affected %llu\n", affected);
 		}
 		else if(command == 'o'){
 			queriesInsertOglas(query);
-			result = run_query(query, connection);
-			print_result(result);
-			mysql_free_result(result);	
+			run_query(query, connection);
+			affected = mysql_affected_rows(connection);
+			printf("Affected %llu\n", affected);
 		}
 		else if(command == 'k'){
 			queriesSelectAllKorisnik(query);
@@ -96,7 +92,7 @@ int main (int argc, char **argv){
 			print_result(result);
 			mysql_free_result(result);		
 		}
-		else if(command != 'q' && command != '\n'){
+		else if(command != 'q' && !isspace(command)){
 			printf("Unknown command, enter i for instructions\n");
 		}
 	}
