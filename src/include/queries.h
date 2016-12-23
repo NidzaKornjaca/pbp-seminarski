@@ -6,3 +6,4 @@ extern void queriesInsertPrijava(char *queryOut, unsigned userId, unsigned oglas
 extern void queriesInsertKorisnik(char *queryOut, char *userName, char *pw, char *email);
 extern void queriesDeletePrijava(char *queryOut, unsigned userId, unsigned oglasId);
 extern void queriesInsertOglas(char *queryOut);
+extern void queriesSelectAllKorisnik(char *queryOut);
